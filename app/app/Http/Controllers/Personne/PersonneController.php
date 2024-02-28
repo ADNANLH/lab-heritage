@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\personne\ClientRepositorie;
 use Illuminate\Support\Str;
-use App\Models\Membre;
-use App\Models\Client;
+use App\Models\Formateur;
+use App\Models\Stagiaire;
 use Illuminate\Support\Facades\Route;
 
 
@@ -88,10 +88,10 @@ class PersonneController extends Controller
         $modelRepository = $model.'Repositorie';
         $path = "\\App\\Repositories\\personne\\".$modelRepository;
 
-        if($model === 'Membre'){
-            $repository = new $path(new Membre);
-        }elseif($model === 'Client'){
-            $repository = new $path(new Client);
+        if($model === 'Formateur'){
+            $repository = new $path(new Formateur);
+        }elseif($model === 'Stagiaire'){
+            $repository = new $path(new Stagiaire);
         }
         return $repository;
     }

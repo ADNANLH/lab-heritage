@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Membre;
+use App\Models\Formateur;
 
-class MembreSeeder extends Seeder
+class FormateurSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,38 +14,38 @@ class MembreSeeder extends Seeder
     public function run(): void
     {
         $now = \Carbon\Carbon::now();
-        Membre::create([
+        Formateur::create([
             'nom' => 'Ahmed',
             'prenom' => 'Ben ali',
             'email' => 'ahmed@gmail.com',
-            'type' => 'membre',
+            'type' => 'Formateur',
             'created_at' => $now,
             'updated_at' => $now,
         ]);
 
-        Membre::create([
+        Formateur::create([
             'nom' => 'Karim',
             'prenom' => 'Souiri',
             'email' => 'karim@gmail.com',
-            'type' => 'membre',
+            'type' => 'Formateur',
             'created_at' => $now,
             'updated_at' => $now,
         ]);
 
-        Membre::create([
+        Formateur::create([
             'nom' => 'Imane',
             'prenom' => 'Alami',
             'email' => 'imane@gmail.com',
-            'type' => 'membre',
+            'type' => 'Formateur',
             'created_at' => $now,
             'updated_at' => $now,
         ]);
 
-        Membre::create([
+        Formateur::create([
             'nom' => 'Salah',
             'prenom' => 'Kamari',
             'email' => 'salah@gmail.com',
-            'type' => 'membre',
+            'type' => 'Formateur',
             'created_at' => $now,
             'updated_at' => $now,
         ]);
