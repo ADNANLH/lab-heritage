@@ -102,3 +102,21 @@ class PersonneController extends Controller
         return $type[0];
     }
 }
+
+
+class perssoneRepository
+{
+    protected $model;
+
+    public function __construct(Perssone $model)
+    {
+        $this->perssone = $perssone;
+    }
+
+    public function create(array $data)
+    {
+        return $this->perssoneY->create($data);
+    }
+
+    // Add other CRUD methods as needed
+}
